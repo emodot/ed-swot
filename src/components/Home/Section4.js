@@ -1,11 +1,9 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import { ReactComponent as OneOnOne } from "assets/icons/one-on-one.svg";
 import { ReactComponent as Solution } from "assets/icons/solution.svg";
 import Image1a from "assets/images/home-sec-4-1a.png";
 import Image1b from "assets/images/home-sec-4-1b.png";
 import Image1c from "assets/images/home-sec-4-1c.png";
-import Image2a from "assets/images/home-sec-4-1a.png";
+import Image2a from "assets/images/home-sec-4-2a.png";
 import Image2b from "assets/images/home-sec-4-2b.png";
 import Image2c from "assets/images/home-sec-4-2c.png";
 import { motion } from "framer-motion";
@@ -118,7 +116,7 @@ const Section4 = () => {
                     <div className="flex items-center gap-2 text-warning mb-2">
                       <Solution className="w-10 h-10" />
                     </div>
-                    <h3 className="text-[18px] font-aileron_sb text-dark_brand_primary">
+                    <h3 className="text-[18px] font-aileron_sb w-fit bg-gradient-to-r from-dark_brand_primary via-brand_primary to-dark_brand_primary text-transparent bg-clip-text">
                       {feature.title}
                     </h3>
                     <p className="text-14 font-aileron_r text-brand_secondary mt-1">
@@ -172,7 +170,7 @@ const Section4 = () => {
                     <div className="flex items-center gap-2 text-warning mb-2">
                       <Solution className="w-10 h-10" />
                     </div>
-                    <h3 className="text-[18px] font-aileron_sb text-dark_brand_primary">
+                    <h3 className="text-[18px] font-aileron_sb w-fit bg-gradient-to-r from-dark_brand_primary via-brand_primary to-dark_brand_primary text-transparent bg-clip-text">
                       {feature.title}
                     </h3>
                     <p className="text-14 font-aileron_r text-brand_secondary mt-1">
