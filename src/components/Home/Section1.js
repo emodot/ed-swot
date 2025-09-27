@@ -34,23 +34,23 @@ const Section1 = () => {
             variants={fadeIn("up", 0.2)}
           />
           <motion.h1
-            className="mt-4 font-albra_sans_b text-[40px] md:text-[42px] lg:text-[50px] lgm:text-[65px] md:leading-[50px] lg:leading-[60px] lgm:leading-[70px] leading-[54px] mb-4"
+            className="mt-4 font-albra_sans_b text-[43px] md:text-[42px] lg:text-[50px] lgm:text-[65px] md:leading-[50px] lg:leading-[60px] lgm:leading-[70px] leading-[54px] mb-4"
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
           >
             Transform Your{" "}
-            <span className="font_outline_2 italic font-albra_sans_b text-[40px] md:text-[42px] lg:text-[50px] lgm:text-[65px] bg-gradient-to-br from-brand_primary to-dark_brand_primary text-transparent bg-clip-text">
+            <span className="font_outline_2 italic font-albra_sans_b text-[43px] md:text-[42px] lg:text-[50px] lgm:text-[65px] bg-gradient-to-br from-brand_primary to-dark_brand_primary text-transparent bg-clip-text">
               Learning:
             </span>{" "}
             Take Classes{" "}
-            <span className="font_outline_2 italic font-albra_sans_b text-[40px] md:text-[42px] lg:text-[50px] lgm:text-[65px] bg-gradient-to-br from-brand_primary to-dark_brand_primary text-transparent bg-clip-text">
+            <span className="font_outline_2 italic font-albra_sans_b text-[43px] md:text-[42px] lg:text-[50px] lgm:text-[65px] bg-gradient-to-br from-brand_primary to-dark_brand_primary text-transparent bg-clip-text">
               Anywhere!
             </span>
           </motion.h1>
           <motion.p
-            className="font-aileron_r text-18 leading-[24px] mb-6 lg:w-[100%]"
+            className="font-aileron_r lg:text-18 text-14 leading-[24px] mb-6 lg:w-[100%]"
             variants={fadeIn("up", 0.6)}
             initial="hidden"
             whileInView="show"
@@ -86,7 +86,7 @@ const Section1 = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="flex items-center"
+            className="flex items-center mt-4 lg:mt-0"
           >
             <Users />
             <p className="font-aileron_r text-16 ml-3">
@@ -125,21 +125,6 @@ const Section1 = () => {
           />
         </div>
       </div>
-      {/* <motion.div
-        className="lg:h-[35rem] h-[20rem]"
-        style={{
-          // height: "100%",
-          width: "100%",
-          backgroundImage: `url(${isMobile ? Section1MobileBG : Section1BG})`,
-          backgroundSize: "cover",
-          backgroundPosition: `center ${isMobile ? "right 85%" : "center"}`,
-          backgroundRepeat: "no-repeat",
-        }}
-        variants={fadeIn("", 0.8)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-      ></motion.div> */}
     </div>
   );
 };
