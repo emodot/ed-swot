@@ -2,34 +2,26 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { ReactComponent as ArrowRight } from "assets/icons/carousel-arrow-right.svg";
 import { ReactComponent as ArrowLeft } from "assets/icons/carousel-arrow-left.svg";
-import { ReactComponent as UkIcon } from "assets/icons/uk-icon.svg";
-import { ReactComponent as NgIcon } from "assets/icons/ng-icon.svg";
-import { ReactComponent as UsIcon } from "assets/icons/us-icon.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
-import CustomHeading from "components/CustomHeading";
 
-const Section2 = () => {
-  const curricula = [
+const FAQ = () => {
+  const faqs = [
     {
-      title: "UK Curriculum",
-      desc: "Structured and progressive, the UK curriculum (British Curriculum, Scottish Curriculum, Irish Curriculum and Welsh Curriculum) focuses on critical thinking, literacy, and foundational subjects through key stages like EYFS, KS1–KS4, and A-Levels.",
-      flag: <UkIcon />,
+      title: "What is EdSwot?",
+      desc: "EdSwot is an online learning platform that offers expert-led courses, interactive practice, and live classes to help you master skills anywhere, anytime.",
     },
     {
-      title: "Nigerian Curriculum",
-      desc: "Rooted in local relevance and national education standards, the Nigerian curriculum covers core subjects with a balance of academics, morals, and civic responsibility.",
-      flag: <NgIcon />,
+      title: "How do the pricing plans work?",
+      desc: "We offer flexible plans billed monthly or yearly. Each plan includes different levels of access to courses, live sessions, and support. You can upgrade or downgrade anytime.",
     },
     {
-      title: "American Curriculum",
-      desc: "Flexible and student-centered, the American system emphasizes continuous assessment, creativity, and broad subject exploration from Kindergarten through Grade 12.",
-      flag: <UsIcon />,
+      title: "Can I try EdSwot before committing?",
+      desc: "Yes! We offer a free trial so you can explore our platform before choosing a plan.",
     },
     {
-      title: "Nigerian Curriculum",
-      desc: "Rooted in local relevance and national education standards, the Nigerian curriculum covers core subjects with a balance of academics, morals, and civic responsibility.",
-      flag: <NgIcon />,
+      title: "How do the pricing plans work?",
+      desc: "We offer flexible plans billed monthly or yearly. Each plan includes different levels of access to courses, live sessions, and support. You can upgrade or downgrade anytime.",
     },
   ];
   const responsive = {
@@ -66,32 +58,31 @@ const Section2 = () => {
   // const isMobile = window.innerWidth < 768;
 
   return (
-    <div className="bg-white">
+    <div className="bg-light_brand_primary">
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto pt-[5rem] pb-[4rem]">
-        <div className="flex flex-col items-center">
-          <CustomHeading text={"Our Subjects"} variants={fadeIn("up", 0.2)} />
+        <div className="lg:w-[50%]">
           <motion.h1
-            className="mt-4 font-albra_sans_sb text-[28px] lg:text-[32px] lg:leading-[40px] leading-[30px] text-center mb-4"
+            className="mt-4 font-albra_sans_sb text-[28px] lg:text-[32px] lg:leading-[40px] leading-[30px] mb-4"
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            Frequently Asked Questions (FAQs)
+          </motion.h1>
+          <motion.p
+            className="font-aileron_r lg:text-18 text-14 leading-[24px] mb-6"
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
           >
-            Explore Our Curricula
-          </motion.h1>
-          <motion.p
-            className="font-aileron_r lg:text-18 text-14 text-center leading-[24px] mb-6"
-            variants={fadeIn("up", 0.6)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-          >
-            Choose your preferred curriculum and dive into expert-led live
-            classes across academics, languages, coding, and more.
+            Got questions? We've got answers. Find clarity on what we offer, how
+            it works, and how to get the most out of your learning experience.
           </motion.p>
         </div>
         <div className="relative pt-[2rem]">
-          <div className="mt-[2rem] w-full border border-brand_primary bg-[#E5E5E5] rounded-[12px] py-4 px-2">
+          <div className="mt-[2rem] w-full">
             <Carousel
               additionalTransfrom={0}
               arrows={false}
@@ -122,7 +113,7 @@ const Section2 = () => {
               slidesToSlide={1}
               swipeable
             >
-              {curricula.map((item, idx) => (
+              {faqs.map((item, idx) => (
                 <div
                   key={idx}
                   className={`p-6 rounded-[12px] bg-brand_secondary mx-[10px] h-full`}
@@ -146,4 +137,4 @@ const Section2 = () => {
   );
 };
 
-export default Section2;
+export default FAQ;
