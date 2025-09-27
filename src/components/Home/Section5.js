@@ -42,7 +42,7 @@ const Section5 = () => {
                 knowledgeable, and genuinely care about helping you understand.”
               </p>
               <div className="flex items-center gap-2 mt-4">
-                <img src={StudentImg} alt="student" className="w-[3rem]"/>
+                <img src={StudentImg} alt="student" className="w-[3rem]" />
                 <div>
                   <p className="font-aileron_sb text-brand_secondary text-14 leading-[24px]">
                     Sarah Khumalo
@@ -78,7 +78,11 @@ const Section5 = () => {
           </motion.p>
           <div>
             {tutorFeatures.map((item, index) => (
-              <div
+              <motion.div
+                variants={fadeIn("", 0.8 + index * 0.2)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
                 key={index}
                 className="pl-2 bg-gradient-to-b from-brand_primary to-dark_brand_primary mb-[1rem]"
               >
@@ -86,10 +90,16 @@ const Section5 = () => {
                   <ThunderIcon />
                   <p className="font-aileron_b text-white">{item}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
-          <div className="mt-[3rem]">
+          <motion.div
+            variants={fadeIn("up", 0.8)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="mt-[3rem]"
+          >
             <Button
               name={"Get Started"}
               theme={"primary"}
@@ -98,7 +108,7 @@ const Section5 = () => {
                 navigate("/");
               }}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
