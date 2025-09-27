@@ -79,7 +79,11 @@ const Section4 = () => {
           <div className="max-w-7xl mx-auto lg:flex gap-10 items-center">
             <div className="grid gap-4 mb-[2rem] lg:mb-0">
               <div className="rounded-[12px] overflow-hidden border border-brand_primary">
-                <img
+                <motion.img
+                  variants={fadeIn("", 0.4)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true }}
                   src={Image1a}
                   alt="Tutor teaching online"
                   className="w-full h-full object-cover"
@@ -87,14 +91,22 @@ const Section4 = () => {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-[12px] overflow-hidden border border-brand_primary">
-                  <img
+                  <motion.img
+                    variants={fadeIn("", 0.6)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
                     src={Image1b}
                     alt="Student online learning"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-[12px] overflow-hidden border border-brand_primary">
-                  <img
+                  <motion.img
+                    variants={fadeIn("", 0.8)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
                     src={Image1c}
                     alt="Student focused learning"
                     className="w-full h-full object-cover"
@@ -104,15 +116,34 @@ const Section4 = () => {
             </div>
             <div>
               <OneOnOne />
-              <h2 className="text-[36px] font-albra_sans_sb text-brand_secondary mb-1">
+              <motion.h2
+                variants={fadeIn("up", 0.4)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="text-[36px] font-albra_sans_sb text-brand_secondary mb-1"
+              >
                 One-On-One Classes
-              </h2>
-              <p className="text-16 font-aileron_r text-brand_secondary mb-8">
+              </motion.h2>
+              <motion.p
+                variants={fadeIn("up", 0.6)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="text-16 font-aileron_r text-brand_secondary mb-8"
+              >
                 One tutor. One student. 100% focus on you and your goals.
-              </p>
+              </motion.p>
               <div className="grid sm:grid-cols-2 gap-8">
                 {oneOnOne.map((feature, idx) => (
-                  <div key={idx} className="flex flex-col">
+                  <motion.div
+                    variants={fadeIn("", 0.6 + idx * 0.2)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
+                    key={idx}
+                    className="flex flex-col"
+                  >
                     <div className="flex items-center gap-2 text-warning mb-2">
                       <Solution className="w-10 h-10" />
                     </div>
@@ -122,7 +153,7 @@ const Section4 = () => {
                     <p className="text-14 font-aileron_r text-brand_secondary mt-1">
                       {feature.desc}
                     </p>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -132,7 +163,11 @@ const Section4 = () => {
           <div className="max-w-7xl mx-auto lg:flex flex-row-reverse gap-10 items-center">
             <div className="grid gap-4 mb-[2rem] lg:mb-0">
               <div className="rounded-[12px] overflow-hidden border border-brand_primary">
-                <img
+                <motion.img
+                  variants={fadeIn("", 0.4)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true }}
                   src={Image2a}
                   alt="Tutor teaching online"
                   className="w-full h-full object-cover"
@@ -140,14 +175,22 @@ const Section4 = () => {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-[12px] overflow-hidden border border-brand_primary">
-                  <img
+                  <motion.img
+                    variants={fadeIn("", 0.6)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
                     src={Image2b}
                     alt="Student online learning"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-[12px] overflow-hidden border border-brand_primary">
-                  <img
+                  <motion.img
+                    variants={fadeIn("", 0.8)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
                     src={Image2c}
                     alt="Student focused learning"
                     className="w-full h-full object-cover"
@@ -157,16 +200,35 @@ const Section4 = () => {
             </div>
             <div>
               <Solution />
-              <h2 className="text-[36px] font-albra_sans_sb text-brand_secondary mb-1">
+              <motion.h2
+                variants={fadeIn("up", 0.4)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="text-[36px] font-albra_sans_sb text-brand_secondary mb-1"
+              >
                 Group Classes
-              </h2>
-              <p className="text-16 font-aileron_r text-brand_secondary mb-8 lg:w-[65%]">
+              </motion.h2>
+              <motion.p
+                variants={fadeIn("up", 0.6)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="text-16 font-aileron_r text-brand_secondary mb-8 lg:w-[65%]"
+              >
                 Personalized live classes tailored to your pace, goals, and
                 interests. Just you and your expert tutor.
-              </p>
+              </motion.p>
               <div className="grid sm:grid-cols-2 gap-8">
                 {groupClasses.map((feature, idx) => (
-                  <div key={idx} className="flex flex-col">
+                  <motion.div
+                    variants={fadeIn("", 0.6 + idx * 0.2)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
+                    key={idx}
+                    className="flex flex-col"
+                  >
                     <div className="flex items-center gap-2 text-warning mb-2">
                       <Solution className="w-10 h-10" />
                     </div>
@@ -176,7 +238,7 @@ const Section4 = () => {
                     <p className="text-14 font-aileron_r text-brand_secondary mt-1">
                       {feature.desc}
                     </p>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
