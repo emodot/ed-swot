@@ -24,7 +24,7 @@ const Section6 = () => {
   ];
 
   return (
-    <div className="bg-light_brand_primary pt-[5rem]">
+    <div className="bg-light_brand_primary py-[5rem]">
       <div className="bg-white max-w-[1300px] lg:w-[95%] w-[90%] m-auto p-[4rem]">
         <div className="flex flex-col items-center">
           <CustomHeading text={"Our Courses"} variants={fadeIn("up", 0.2)} />
@@ -65,7 +65,15 @@ const Section6 = () => {
         </div>
         <div className="grid lg:grid-cols-4 gap-2 w-[85%] mx-auto mt-4">
           {socailImages.map((item, index) => (
-            <img key={index} src={item} alt="socials" />
+            <motion.img
+              variants={fadeIn("", 0.8 + index * 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              key={index}
+              src={item}
+              alt="socials"
+            />
           ))}
         </div>
       </div>

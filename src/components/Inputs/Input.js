@@ -41,7 +41,7 @@ const Input = ({
           htmlFor={id}
           className={`
             ${disabled ? "bg-none" : "bg-white"}
-            text-black mb-2 font-albra_sans_l pt-2 cursor-text ${variant}`}
+            text-black mb-2 font-aileron_r pt-2 cursor-text ${variant}`}
         >
           {label}
         </label>
@@ -68,7 +68,7 @@ const Input = ({
         onKeyDown={onKeyDown}
         className={`${variant} 
             ${inputError ? "border-error" : "border-neutral_stroke_1"} 
-            h-[50px] px-4 mt-2 text-brand_secondary text-[16px] sm:text-14 w-full outline-0 border font-albra_sans_l hide_tap
+            h-[50px] px-4 mt-2 text-brand_secondary text-[16px] sm:text-14 w-full outline-0 border font-aileron_r hide_tap
             rounded-[10px] focus:border-brand_secondary focus:border
             ${
               disabled
