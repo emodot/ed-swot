@@ -5,7 +5,7 @@ import { ReactComponent as CertifiedIcon } from "assets/icons/certified-icon.svg
 import { ReactComponent as ClockIcon } from "assets/icons/clock-icon.svg";
 import { ReactComponent as LocationIcon } from "assets/icons/location-icon.svg";
 // import Button from "components/Inputs/Button";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import Subject8 from "assets/images/subjects/subject-8.png";
 import TutorAvatar from "assets/images/mocks/tutor-avatar.png";
 
@@ -23,7 +23,7 @@ const Section3 = () => {
     "Software & Tech",
     "Exam Prep",
   ];
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState(allTabs[0]);
   // const isMobile = window.innerWidth < 768;
 
@@ -53,6 +53,7 @@ const Section3 = () => {
           <Tabs tabs={allTabs} onChange={setActiveTab} />
         </div>
         <div>
+          <p className="hidden">{activeTab}</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {subjects.map((course, idx) => (
               <div
