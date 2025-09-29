@@ -12,7 +12,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 import Input from "./Inputs/Input";
 import { useState } from "react";
-import Button from "./Inputs/Button";
 
 const Footer = ({ submitEmail }) => {
   const navigate = useNavigate();
@@ -122,7 +121,10 @@ const Footer = ({ submitEmail }) => {
                     showError={false}
                   />
                 </div>
-                <button className="mt-[8px] text-white font-aileron_r text-14 px-8 rounded-[10px] border border-white w-fit h-[51px]">
+                <button
+                  className="mt-[8px] text-white font-aileron_r text-14 px-8 rounded-[10px] border border-white w-fit h-[51px]"
+                  onClick={() => submit()}
+                >
                   Subscribe
                 </button>
               </div>
