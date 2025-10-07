@@ -25,7 +25,7 @@ const Section6 = () => {
 
   return (
     <div className="bg-light_brand_primary py-[5rem]">
-      <div className="bg-white max-w-[1300px] lg:w-[95%] w-[90%] m-auto p-[4rem]">
+      <div className="bg-white max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:p-[4rem] p-2">
         <div className="flex flex-col items-center">
           <CustomHeading text={"Our Courses"} variants={fadeIn("up", 0.2)} />
           <motion.h1
@@ -63,7 +63,7 @@ const Section6 = () => {
             />
           </motion.div>
         </div>
-        <div className="grid lg:grid-cols-4 gap-2 w-[85%] mx-auto mt-4">
+        <div className="grid lg:grid-cols-4 grid-cols-2 gap-2 md:w-[85%] mx-auto mt-4">
           {socailImages.map((item, index) => (
             <motion.img
               variants={fadeIn("", 0.8 + index * 0.2)}
