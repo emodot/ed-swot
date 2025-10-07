@@ -108,7 +108,7 @@ const Footer = ({ submitEmail }) => {
               <h6 className="text-[22px] font-albra_sans_b mb-[5px] text-white">
                 Stay Updated With Our Newsletter.
               </h6>
-              <div className="flex gap-2 w-[50%] mb-[1rem]">
+              <div className="flex gap-2 md:w-[50%] mb-[1rem]">
                 <div className="basis-[60%]">
                   <Input
                     placeholder="Enter your email Address"
@@ -135,7 +135,7 @@ const Footer = ({ submitEmail }) => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true }}
-                className="mb-[3rem]"
+                className="mb-[3rem] basis-[50%] lg:basis-[22%]"
               >
                 <h6 className="text-[18px] font-albra_sans_b mb-[15px] text-white">
                   Company
@@ -157,7 +157,7 @@ const Footer = ({ submitEmail }) => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true }}
-                className="mb-[3rem]"
+                className="mb-[3rem] basis-[50%] lg:basis-[22%]"
               >
                 <h6 className="text-[18px] font-albra_sans_b mb-[15px] text-white">
                   My Account
@@ -179,7 +179,7 @@ const Footer = ({ submitEmail }) => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true }}
-                className="mb-[3rem]"
+                className="mb-[3rem] basis-[50%] lg:basis-[22%]"
               >
                 <h6 className="text-[18px] font-albra_sans_b mb-[15px] text-white">
                   Legal
@@ -201,7 +201,7 @@ const Footer = ({ submitEmail }) => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true }}
-                className="lg:basis-[35%] mb-[3rem]"
+                className="lg:basis-[34%] mb-[3rem]"
               >
                 <h6 className="text-[18px] text-white font-albra_sans_b mb-[15px]">
                   Get In Touch
