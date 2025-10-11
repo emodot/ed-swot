@@ -3,11 +3,11 @@ import { fadeIn } from "variants.js";
 import CustomHeading from "components/CustomHeading";
 import PricingPlans from "components/PricingPlans";
 
-const Section7 = () => {
+const Section7 = ({ triggerCreatePlanForm }) => {
   // const isMobile = window.innerWidth < 768;
 
   return (
-    <div className="bg-white">
+    <div id="pricing" className="bg-white">
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto pt-[5rem] pb-[4rem]">
         <div className="flex flex-col items-center">
           <CustomHeading text={"Our Pricing"} variants={fadeIn("up", 0.2)} />
@@ -30,6 +30,23 @@ const Section7 = () => {
             Get the most out of your education with flexible packages designed
             to grow with you.
           </motion.p>
+          <motion.div
+            variants={fadeIn("up", 0.8)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="flex gap-3 items-center bg-brand_secondary rounded-[12px] px-[3rem] py-3 w-fit"
+          >
+            <p className="font-aileron_r text-white text-14">
+              Need a custom pricing plan?
+            </p>
+            <p
+              onClick={triggerCreatePlanForm}
+              className="font-aileron_r bg-gradient-to-br from-brand_primary to-dark_brand_primary text-transparent bg-clip-text text-14 cursor-pointer"
+            >
+              Let’s talk
+            </p>
+          </motion.div>
         </div>
         <div>
           <PricingPlans />

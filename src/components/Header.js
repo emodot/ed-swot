@@ -1,33 +1,32 @@
-import React, { useCallback } from "react";
-// import { ReactComponent as LogoWhite } from "assets/icons/logo-white.svg";
+import React, { useCallback, useState } from "react";
 import Logo from "assets/images/logo-main.png";
-// import { ReactComponent as LightHamburger } from "assets/icons/hamburger.svg";
 import { ReactComponent as DarkHamburger } from "assets/icons/hamburger-black.svg";
 import Button from "./Inputs/Button";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useModal } from "layouts/MainLayout";
-
 import { motion } from "framer-motion";
+import BookClassModal from "./Modal/BookClassModal";
 // import { fadeIn } from "variants.js";
 
 const Header = () => {
+  const [showBookClassForm, setShowBookClassForm] = useState(false);
   const { toggleMenu } = useModal();
   const menuOptions = [
     {
-      name: "What we do",
-      link: "/what-we-do",
+      name: "Home",
+      link: "/",
     },
     {
-      name: "Plans and Pricing",
-      link: "/plans-and-pricing",
+      name: "Courses",
+      link: "#courses",
     },
     {
-      name: "About us",
-      link: "/about-us",
+      name: "Tutors",
+      link: "#tutors",
     },
     {
-      name: "Contact Us",
-      link: "/contact-us",
+      name: "Pricing",
+      link: "#pricing",
     },
   ];
   const navigate = useNavigate();
@@ -72,31 +71,41 @@ const Header = () => {
           {menuOptions.map((item, index) => {
             const active = isActive(item);
             return (
-              <p
+              <a
                 key={index}
+                href={item.link}
                 className={`cursor-pointer font-aileron_r text-14 pb-[5px] text-black transition-all duration-150
                   ${
                     active
-                      ? "border-b-[1.5px] border-brand_primary font-bold text-brand_primary"
+                      ? "border-b-[1.5px] border-brand_secondary font-bold text-brand_secondary"
                       : "border-b-[1.5px] border-transparent"
                   }
                   hover:border-brand_primary transition-colors duration-500 px-1 py-1 pt-2
                 `}
-                onClick={() => {
-                  navigate(item.link);
-                }}
+                // onClick={e => {
+                //   // Prevent full page reload and use react-router navigation
+                //   e.preventDefault();
+                //   navigate(item.link);
+                // }}
               >
                 {item.name}
-              </p>
+              </a>
             );
           })}
         </div>
         <div className="hidden lg:flex items-center gap-6">
           <Button
-            name={"Get Started"}
+            name={"Book a Free Trial Class"}
+            theme={"transparent"}
+            textClassName="sm:text-14"
+            className="4xs:w-auto"
+            onClick={() => setShowBookClassForm(true)}
+          />
+          <Button
+            name={"Log in"}
             theme={"primary"}
             onClick={() => {
-              navigate("/request");
+              navigate("/");
             }}
           />
         </div>
@@ -104,6 +113,9 @@ const Header = () => {
           <DarkHamburger onClick={() => toggleMenu()} />
         </div>
       </div>
+      {showBookClassForm && (
+        <BookClassModal onClose={() => setShowBookClassForm(false)} />
+      )}
     </motion.div>
   );
 };

@@ -51,7 +51,7 @@ const Section4 = () => {
   // const isMobile = window.innerWidth < 768;
 
   return (
-    <div className="bg-light_brand_primary">
+    <div id="courses" className="bg-light_brand_primary">
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto pt-[5rem] pb-[4rem]">
         <div className="flex flex-col items-center">
           <CustomHeading text={"Our Courses"} variants={fadeIn("up", 0.2)} />

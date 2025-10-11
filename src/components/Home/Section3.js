@@ -15,7 +15,7 @@ import Tabs from "components/Inputs/Tabs";
 import { useState } from "react";
 import { subjects } from "mocks/subjects";
 
-const Section3 = () => {
+const Section3 = ({ triggerContactForm }) => {
   const allTabs = [
     "Subjects",
     "Language Courses",
@@ -54,7 +54,7 @@ const Section3 = () => {
         </div>
         <div>
           <p className="hidden">{activeTab}</p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 lgm:grid-cols-4 gap-4">
             {subjects.map((course, idx) => (
               <div
                 key={idx}
@@ -150,7 +150,10 @@ const Section3 = () => {
                 Let us know what you’re looking for, we might already be working
                 on it!
               </p>
-              <button className="bg-brand_primary text-brand_secondary font-aileron_r text-14 px-6 py-2 rounded-md">
+              <button
+                onClick={triggerContactForm}
+                className="bg-brand_primary text-brand_secondary font-aileron_r text-14 px-6 py-2 rounded-md"
+              >
                 Contact Us
               </button>
             </div>
