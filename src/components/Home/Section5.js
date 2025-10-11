@@ -20,7 +20,7 @@ const Section5 = () => {
   ];
 
   return (
-    <div className="bg-white">
+    <div id="tutors" className="bg-white">
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto pt-[5rem] pb-[4rem] grid lg:grid-cols-2 gap-[5rem]">
         <div className="relative">
           <img src={Image5} alt="" />

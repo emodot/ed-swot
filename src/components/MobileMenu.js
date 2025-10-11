@@ -10,20 +10,20 @@ const MobileMenu = () => {
   const { closeMenu } = useModal();
   const menuOptions = [
     {
-      name: "What we do",
-      link: "/what-we-do",
+      name: "Home",
+      link: "/",
     },
     {
-      name: "Plans and Pricing",
-      link: "/plans-and-pricing",
+      name: "Courses",
+      link: "#courses",
     },
     {
-      name: "About us",
-      link: "/about-us",
+      name: "Tutors",
+      link: "#tutors",
     },
     {
-      name: "Contact Us",
-      link: "/contact-us",
+      name: "Pricing",
+      link: "#pricing",
     },
   ];
   return (
@@ -32,25 +32,26 @@ const MobileMenu = () => {
         <img
           src={Logo}
           alt="logo"
-          className="w-[11rem] lg:w-[9.5rem] cursor-pointer"
+          className="w-[4rem] lg:w-[4rem] cursor-pointer"
           onClick={() => {
             navigate("/");
           }}
         />
         <CloseMenu onClick={() => closeMenu()} />
       </div>
-      <div className="mt-[5rem] pb-[1rem]">
+      <div className="mt-[5rem] pb-[1rem] flex flex-col">
         {menuOptions.map((item, index) => (
-          <p
+          <a
             key={index}
+            href={item.link}
             className="font-albra_sans_r text-[20px] py-[1.5rem] text-brand_secondary cursor-pointer border-b border-b-neutral_stroke_1"
             onClick={() => {
               closeMenu();
-              navigate(item.link);
+              // navigate(item.link);
             }}
           >
             {item.name}
-          </p>
+          </a>
         ))}
       </div>
       <div className="absolute bottom-[15%] left-[2rem] w-full">

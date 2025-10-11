@@ -27,7 +27,7 @@ const Section6 = () => {
     <div className="bg-light_brand_primary py-[5rem]">
       <div className="bg-white max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:p-[4rem] p-2">
         <div className="flex flex-col items-center">
-          <CustomHeading text={"Our Courses"} variants={fadeIn("up", 0.2)} />
+          <CustomHeading text={"Our Socials"} variants={fadeIn("up", 0.2)} />
           <motion.h1
             className="mt-4 font-albra_sans_sb text-[28px] lg:text-[32px] lg:leading-[40px] leading-[30px] text-center mb-4"
             variants={fadeIn("up", 0.4)}

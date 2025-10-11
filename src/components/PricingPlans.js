@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 import { pricingPlans } from "mocks/pricingPlans";
 
-export default function PricingPlans({ selectPlan }) {
+export default function PricingPlans() {
   // const navigate = useNavigate();
   // const location = useLocation();
   // const isRequestPage = location.pathname.includes("request");

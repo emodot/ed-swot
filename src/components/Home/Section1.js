@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 import CustomHeading from "components/CustomHeading";
 
-const Section1 = () => {
+const Section1 = ({ triggerBookClassForm }) => {
   const navigate = useNavigate();
   // const isMobile = window.innerWidth < 768;
 
@@ -27,30 +27,30 @@ const Section1 = () => {
       //   backgroundRepeat: "no-repeat",
       // }}
     >
-      <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:pt-[13rem] pt-[9rem] pb-[6rem] grid md:grid-cols-2 grid-cols-1 items-center">
+      <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lgm:pt-[13rem] pt-[9rem] pb-[6rem] grid md:grid-cols-2 grid-cols-1 items-center">
         <div className="md:w-[90%] lg:w-[90%]">
           <CustomHeading
             text={"Welcome to ED Swot"}
             variants={fadeIn("up", 0.2)}
           />
           <motion.h1
-            className="mt-4 font-albra_sans_b text-[43px] md:text-[42px] lg:text-[50px] lgm:text-[65px] md:leading-[50px] lg:leading-[60px] lgm:leading-[70px] leading-[54px] mb-4"
+            className="mt-4 font-albra_sans_b text-[43px] md:text-[42px] lgm:text-[65px] md:leading-[50px] lg:leading-[60px] lgm:leading-[70px] leading-[54px] mb-4"
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
           >
             Transform Your{" "}
-            <span className="font_outline_2 italic font-albra_sans_b text-[43px] md:text-[42px] lg:text-[50px] lgm:text-[65px] bg-gradient-to-br from-brand_primary to-dark_brand_primary text-transparent bg-clip-text">
+            <span className="font_outline_2 italic font-albra_sans_b text-[43px] md:text-[42px] lgm:text-[65px] bg-gradient-to-br from-brand_primary to-dark_brand_primary text-transparent bg-clip-text">
               Learning:
             </span>{" "}
             Take Classes{" "}
-            <span className="font_outline_2 italic font-albra_sans_b text-[43px] md:text-[42px] lg:text-[50px] lgm:text-[65px] bg-gradient-to-br from-brand_primary to-dark_brand_primary text-transparent bg-clip-text">
+            <span className="font_outline_2 italic font-albra_sans_b text-[43px] md:text-[42px] lgm:text-[65px] bg-gradient-to-br from-brand_primary to-dark_brand_primary text-transparent bg-clip-text">
               Anywhere!
             </span>
           </motion.h1>
           <motion.p
-            className="font-aileron_r lg:text-18 text-14 leading-[24px] mb-6 lg:w-[100%]"
+            className="font-aileron_r lg:text-16 text-14 leading-[24px] mb-6 lg:w-[100%]"
             variants={fadeIn("up", 0.6)}
             initial="hidden"
             whileInView="show"
@@ -78,7 +78,7 @@ const Section1 = () => {
               theme={"transparent"}
               textClassName="sm:text-14"
               className="4xs:w-auto"
-              onClick={() => navigate("/contact-us")}
+              onClick={triggerBookClassForm}
             />
           </motion.div>
           <motion.div
@@ -89,7 +89,7 @@ const Section1 = () => {
             className="flex items-center mt-4 lg:mt-0"
           >
             <Users />
-            <p className="font-aileron_r text-16 ml-3">
+            <p className="font-aileron_r text-14 ml-3">
               12K+ students trust us to succeed
             </p>
           </motion.div>
