@@ -12,7 +12,8 @@ const Home = lazy(() => import("../pages/home"));
 // const WhatWeDo = lazy(() => import("../pages/what-we-do"));
 // const PlansAndPricing = lazy(() => import("../pages/plans-and-pricing"));
 // const FAQ = lazy(() => import("../pages/faq"));
-// const TermsAndConditions = lazy(() => import("../pages/terms-and-conditions"));
+const TermsAndConditions = lazy(() => import("../pages/TermsAndConditions"));
+const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"));
 // const Request = lazy(() => import("../pages/request"));
 // const Personal = lazy(() => import("../pages/request/personal"));
 // const ElderlyOne = lazy(() => import("../pages/request/elderly-one"));
@@ -58,14 +59,14 @@ const router = createBrowserRouter([
         path: "",
         element: <Home />,
       },
-      // {
-      //   path: "/about-us",
-      //   element: <AboutUs />,
-      // },
-      // {
-      //   path: "/contact-us",
-      //   element: <ContactUs />,
-      // },
+      {
+        path: "/terms-and-conditions",
+        element: <TermsAndConditions />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
       // {
       //   path: "/what-we-do",
       //   element: <WhatWeDo />,

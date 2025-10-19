@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import Logo from "assets/images/logo-main.png";
+import Logo from "assets/images/logo-main.webp";
 import { ReactComponent as DarkHamburger } from "assets/icons/hamburger-black.svg";
 import Button from "./Inputs/Button";
 import { useLocation, useNavigate } from "react-router-dom";

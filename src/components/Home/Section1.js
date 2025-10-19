@@ -1,5 +1,5 @@
-import Section1Img from "assets/images/home-sec-1.png";
-// import Section1BG from "assets/images/home-sec-1-bg.jpg";
+import Section1Img from "assets/images/home-sec-1.webp";
+// import Section1BG from "assets/images/home-sec-1-bg.webp";
 import { ReactComponent as Users } from "assets/icons/users.svg";
 import { ReactComponent as GoldStar } from "assets/icons/gold-star.svg";
 import { ReactComponent as GoldCup } from "assets/icons/gold-cup.svg";

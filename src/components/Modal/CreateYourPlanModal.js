@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CreatePlanImg from "assets/images/create-plan-img.png";
+import CreatePlanImg from "assets/images/create-plan-img.webp";
 import { AnimatePresence, motion } from "framer-motion";
 
 const CreateYourPlanModal = ({ onClose }) => {

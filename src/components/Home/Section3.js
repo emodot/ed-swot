@@ -1,4 +1,4 @@
-// import Section3AImg from "assets/images/home-sec-2a.jpg";
+// import Section3AImg from "assets/images/home-sec-2a.webp";
 import { ReactComponent as CourseIcon } from "assets/icons/course-icon.svg";
 import { ReactComponent as TutorIcon } from "assets/icons/tutor-icon.svg";
 import { ReactComponent as CertifiedIcon } from "assets/icons/certified-icon.svg";
@@ -6,7 +6,7 @@ import { ReactComponent as ClockIcon } from "assets/icons/clock-icon.svg";
 import { ReactComponent as LocationIcon } from "assets/icons/location-icon.svg";
 // import Button from "components/Inputs/Button";
 // import { useNavigate } from "react-router-dom";
-import Subject8 from "assets/images/subjects/subject-8.png";
+import Subject8 from "assets/images/subjects/subject-8.webp";
 import TutorAvatar from "assets/images/mocks/tutor-avatar.png";
 
 import { motion } from "framer-motion";
