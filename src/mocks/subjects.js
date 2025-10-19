@@ -1,10 +1,10 @@
-import Subject1 from "assets/images/subjects/subject-1.png";
-import Subject2 from "assets/images/subjects/subject-2.png";
-import Subject3 from "assets/images/subjects/subject-3.png";
-import Subject4 from "assets/images/subjects/subject-4.png";
-import Subject5 from "assets/images/subjects/subject-5.png";
-import Subject6 from "assets/images/subjects/subject-6.png";
-import Subject7 from "assets/images/subjects/subject-7.png";
+import Subject1 from "assets/images/subjects/subject-1.webp";
+import Subject2 from "assets/images/subjects/subject-2.webp";
+import Subject3 from "assets/images/subjects/subject-3.webp";
+import Subject4 from "assets/images/subjects/subject-4.webp";
+import Subject5 from "assets/images/subjects/subject-5.webp";
+import Subject6 from "assets/images/subjects/subject-6.webp";
+import Subject7 from "assets/images/subjects/subject-7.webp";
 
 export const subjects = [
   {

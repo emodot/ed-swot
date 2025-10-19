@@ -1,11 +1,11 @@
 import { ReactComponent as OneOnOne } from "assets/icons/one-on-one.svg";
 import { ReactComponent as Solution } from "assets/icons/solution.svg";
-import Image1a from "assets/images/home-sec-4-1a.png";
-import Image1b from "assets/images/home-sec-4-1b.png";
-import Image1c from "assets/images/home-sec-4-1c.png";
-import Image2a from "assets/images/home-sec-4-2a.png";
-import Image2b from "assets/images/home-sec-4-2b.png";
-import Image2c from "assets/images/home-sec-4-2c.png";
+import Image1a from "assets/images/home-sec-4-1a.webp";
+import Image1b from "assets/images/home-sec-4-1b.webp";
+import Image1c from "assets/images/home-sec-4-1c.webp";
+import Image2a from "assets/images/home-sec-4-2a.webp";
+import Image2b from "assets/images/home-sec-4-2b.webp";
+import Image2c from "assets/images/home-sec-4-2c.webp";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 import CustomHeading from "components/CustomHeading";

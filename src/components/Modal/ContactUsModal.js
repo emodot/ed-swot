@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ContactUsImg from "assets/images/contact-us-img.png";
+import ContactUsImg from "assets/images/contact-us-img.webp";
 import { AnimatePresence, motion } from "framer-motion";
 
 const ContactUsModal = ({ onClose }) => {

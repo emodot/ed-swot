@@ -1,5 +1,5 @@
 
-import Section9BG from "assets/images/home-sec-9-bg.png";
+import Section9BG from "assets/images/home-sec-9-bg.webp";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 import Button from "components/Inputs/Button";

@@ -6,7 +6,7 @@ import { ReactComponent as Facebook } from "assets/icons/facebook.svg";
 import { ReactComponent as Location } from "assets/icons/location-icon-2.svg";
 import { ReactComponent as Mail } from "assets/icons/mail.svg";
 import { ReactComponent as Phone } from "assets/icons/phone.svg";
-import Logo from "assets/images/logo-main-2.png";
+import Logo from "assets/images/logo-main-2.webp";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
@@ -54,11 +54,11 @@ const Footer = ({ submitEmail }) => {
   const legal = [
     {
       name: "Privacy Policy",
-      link: "/",
+      link: "/privacy-policy",
     },
     {
       name: "Terms and Conditions",
-      link: "/",
+      link: "/terms-and-conditions",
     },
   ];
 

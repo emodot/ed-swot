@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 import CustomHeading from "components/CustomHeading";
-import Image5 from "assets/images/home-sec-5.png";
+import Image5 from "assets/images/home-sec-5.webp";
 import { ReactComponent as ThunderIcon } from "assets/icons/thunder-icon.svg";
 import Button from "components/Inputs/Button";
 import { useNavigate } from "react-router-dom";
-import StudentImg from "assets/images/student.png";
+import StudentImg from "assets/images/student.webp";
 
 const Section5 = () => {
   const navigate = useNavigate();

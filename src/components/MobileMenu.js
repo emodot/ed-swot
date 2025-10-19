@@ -1,5 +1,5 @@
 // import { ReactComponent as LogoWhite } from "assets/icons/logo-white.svg";
-import Logo from "assets/images/logo-main.png";
+import Logo from "assets/images/logo-main.webp";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as CloseMenu } from "assets/icons/close-menu.svg";
 import { useModal } from "layouts/MainLayout";

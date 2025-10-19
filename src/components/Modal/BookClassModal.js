@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BookClassImg from "assets/images/book-class-img.png";
+import BookClassImg from "assets/images/book-class-img.webp";
 import { AnimatePresence, motion } from "framer-motion";
 
 const BookClassModal = ({ onClose }) => {

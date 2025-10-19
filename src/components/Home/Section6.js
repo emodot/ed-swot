@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 import CustomHeading from "components/CustomHeading";
-import Image1 from "assets/images/socials/Sub Container-1.png";
-import Image2 from "assets/images/socials/Sub Container-2.png";
-import Image3 from "assets/images/socials/Sub Container-3.png";
-import Image4 from "assets/images/socials/Sub Container-4.png";
-import Image5 from "assets/images/socials/Sub Container-5.png";
-import Image6 from "assets/images/socials/Sub Container-6.png";
-import Image7 from "assets/images/socials/Sub Container-7.png";
-import Image8 from "assets/images/socials/Sub Container.png";
+import Image1 from "assets/images/socials/Sub Container-1.webp";
+import Image2 from "assets/images/socials/Sub Container-2.webp";
+import Image3 from "assets/images/socials/Sub Container-3.webp";
+import Image4 from "assets/images/socials/Sub Container-4.webp";
+import Image5 from "assets/images/socials/Sub Container-5.webp";
+import Image6 from "assets/images/socials/Sub Container-6.webp";
+import Image7 from "assets/images/socials/Sub Container-7.webp";
+import Image8 from "assets/images/socials/Sub Container.webp";
 import Button from "components/Inputs/Button";
 
 const Section6 = () => {
