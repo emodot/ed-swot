@@ -8,6 +8,7 @@ import { ReactComponent as LocationIcon } from "assets/icons/location-icon.svg";
 // import { useNavigate } from "react-router-dom";
 import Subject8 from "assets/images/subjects/subject-8.webp";
 import TutorAvatar from "assets/images/mocks/tutor-avatar.png";
+import BookClassModal from "../Modal/BookClassModal";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
@@ -16,6 +17,10 @@ import { useState } from "react";
 import { subjects } from "mocks/subjects";
 
 const Section3 = ({ triggerContactForm }) => {
+
+
+  const [showBookClassForm, setShowBookClassForm] = useState(false);
+
   const allTabs = [
     "Subjects",
     "Language Courses",
@@ -85,7 +90,12 @@ const Section3 = ({ triggerContactForm }) => {
                   <p className="text-14 font-aileron_r text-[#434343] mt-2">
                     {course.desc}
                   </p>
-
+                  {course.prepares && (
+                    <p className="text-14 font-aileron_r text-[#434343] mt-2">
+                      {course.prepares}
+                    </p>
+                  )}
+                  <div style={{height: '100%'}}></div>
                   <div className="flex items-center gap-1 mt-3 text-border_stroke_2">
                     <span className="flex items-center gap-1 text-14">
                       <CertifiedIcon /> Certified
@@ -113,7 +123,7 @@ const Section3 = ({ triggerContactForm }) => {
                         {course.tutor}
                       </p>
                       <p className="text-12 text-border_stroke_2">
-                        Science Professor
+                        Verified
                       </p>
                     </div>
                     <div className="ml-auto flex gap-1 items-center bg-[#EBF5FF] rounded-[16px] px-3 py-1 w-fit">
@@ -125,10 +135,10 @@ const Section3 = ({ triggerContactForm }) => {
                   </div>
 
                   <div className="flex gap-3 mt-6">
-                    <button className="flex-1 bg-brand_primary text-brand_secondary font-aileron_r text-14 py-2 rounded-md">
+                    <button className="flex-1 bg-brand_primary text-brand_secondary font-aileron_r text-14 py-2 rounded-md" onClick={() => setShowBookClassForm(true)}>
                       Get Started
                     </button>
-                    <button className="flex-1 text-brand_secondary font-aileron_r text-14 py-2 rounded-md">
+                    <button className="flex-1 text-brand_secondary font-aileron_r text-14 py-2 rounded-md" onClick={() => setShowBookClassForm(true)}>
                       View Details
                     </button>
                   </div>
@@ -160,6 +170,9 @@ const Section3 = ({ triggerContactForm }) => {
           </div>
         </div>
       </div>
+      {showBookClassForm && (
+        <BookClassModal onClose={() => setShowBookClassForm(false)} />
+      )}
     </div>
   );
 };
