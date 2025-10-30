@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import Button from "./Inputs/Button";
 import { useNavigate } from "react-router-dom";
-import ErrorImg from "../assets/images/404-img.webp";
 
 const ErrorPage = () => {
   const navigate = useNavigate()
