@@ -43,11 +43,11 @@ const Footer = ({ submitEmail }) => {
   const myAccount = [
     {
       name: "Create Account",
-      link: "/",
+      link: "/get-started",
     },
     {
       name: "Log into Account",
-      link: "/",
+      link: "/get-started",
     },
   ];
 
