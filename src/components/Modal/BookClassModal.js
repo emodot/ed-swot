@@ -21,9 +21,9 @@ const BookClassModal = ({ onClose }) => {
       },
       body: JSON.stringify({
         to: "hello@edswot.com, akinthope@gmail.com",
-        subject: "Book Trail Class",
+        subject: "Book Trial Class",
         html: `
-            <p>Someone filled the Get Started form on the website<p>
+            <p>Someone filled the Book Trial form on the website<p>
             <p>Name: <strong>${formData.name}</strong>
             <p>Email: <strong>${formData.email}</strong>
             <p>Phone: <strong>${formData.phone}</strong>
